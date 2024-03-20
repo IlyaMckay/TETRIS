@@ -7,8 +7,9 @@ This is an implementation of TETRIS in Python using:
 2. Jinja2 as a template engine.
 3. Threading module ("Rlock" is used for executing game logic, while "Timer" is employed for updating the game field on the frontend).
 
-## Game controls:
+## How to play
 
+Game controls:
 ⬆️: Rotate figure clockwise.
 
 ⬅️: Move figure left (one cell).
@@ -16,6 +17,7 @@ This is an implementation of TETRIS in Python using:
 ➡️: Move figure right (one cell).
 
 ⬇️: Soft drop (move figure down one cell). Hold for continuous soft drop.
+
 
 1. Choose the battlefield size by typing a number from 3 to 5:
     - If you choose a battlefield size of 4 or 5, a winning combination will require 4 marks in a row, column, or diagonal.
