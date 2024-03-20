@@ -10,6 +10,7 @@ This is an implementation of TETRIS in Python using:
 ## How to play
 
 Game controls:
+
 ⬆️: Rotate figure clockwise.
 
 ⬅️: Move figure left (one cell).
