@@ -55,15 +55,14 @@ There are two ways to download the game:
 
 3. Make your moves using the keyboard arrows (refer to the instructions above).
 
-
-## Files
-
-- `tictactoe.py`: Contains the main game logic.
-- `tictactoe_test.py`: Contains unit tests for each method in the `Game` class.
-
 ## Dependencies
 
 This game requires Python 3.x to run.
+```
+Django==5.0.3
+keyboard
+gunicorn
+```
 
 ## Contributors
 
