@@ -4,11 +4,11 @@
 
 Tetris is a classic puzzle game where you strategically rotate and drop tetrominoes to clear lines.
 
-This implementation is built using Python and utilizes the following technologies:
+This implementation is built using `Python` and utilizes the following technologies:
 
-- Django framework for the backend.
-- Jinja2 as a template engine for rendering frontend views.
-- Threading module: "Rlock" is used for executing game logic, while "Timer" is employed for updating the game field on the frontend.
+- `Django` framework for the backend.
+- `Jinja2` as a template engine for rendering frontend views.
+- `Threading` module: `Rlock()` is used for executing game logic, while `Timer()` is employed for updating the game field on the frontend.
 
 ## How To Play
 
