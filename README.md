@@ -8,7 +8,7 @@ This implementation is built using `Python` and utilizes the following technolog
 
 - `Django` framework for the backend.
 - `Jinja2` as a template engine for rendering frontend views.
-- `Threading` module: `Rlock()` is used for executing game logic, while `Timer()` is employed for updating the game field on the frontend.
+- `Threading` module: `Rlock()` is used for ensure synchronized access for shared resources, while `Timer()` is employed for updating the game field on the frontend.
 
 ## How To Play
 
@@ -22,7 +22,7 @@ This implementation is built using `Python` and utilizes the following technolog
 
 ## Browser Game
 
-...to be added in a while
+[Play](https://tetris.cfapps.us10-001.hana.ondemand.com/)
 
 ## CLI Game
 
