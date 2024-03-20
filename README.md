@@ -1,27 +1,60 @@
 [![Apache License 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
-# TETRIS
+# Tetris
 
-This is an implementation of TETRIS in Python using Django framework.
+Tetris is a classic puzzle game where you strategically rotate and drop tetrominoes to clear lines.
 
-## How to Play
+This implementation is built using `Python` and utilizes the following technologies:
 
-1. Choose the battlefield size by typing a number from 3 to 5:
-    - If you choose a battlefield size of 4 or 5, a winning combination will require 4 marks in a row, column, or diagonal.
+- `Django` framework for the backend.
+- `Jinja2` as a template engine for rendering frontend views.
+- `Threading` module: `Rlock()` is used for ensure synchronized access for shared resources, while `Timer()` is employed for updating the game field on the frontend.
 
-2. To place a mark in a cell, enter two digits separated by a comma, like this: `row, column`:
-    - Row and column indices start from 0. For example, to place a mark in the center of a 3x3 field, enter: `1, 1`.
+## How To Play
 
-3. After setting up the battlefield, you can type 'r' to restart or 'q' to quit the game.
+### Game Controls:
 
-Enjoy the game!
+- <kbd>↑</kbd> - Rotate figure clockwise.
+- <kbd>←</kbd> - Move figure left (one cell).
+- <kbd>→</kbd> - Move figure right (one cell).
+- <kbd>↓</kbd> - Soft drop (move figure down one cell). Hold for continuous soft drop.
 
-## Usage
 
-1. Run the `tictactoe.py` file to start the game.
-2. Follow the on-screen instructions to play.
-3. Make your moves by entering the cell coordinates.
-4. To restart the game or quit, follow the prompts on the screen.
+## Browser Game
+
+[Play](https://tetris.cfapps.us10-001.hana.ondemand.com/)
+
+## CLI Game
+
+### Download the game:
+
+There are two ways to download the game:
+
+1. **Clone the repository using Git:**
+   
+    ```bash
+    git clone https://github.com/cult2rologist/TETRIS.git
+    ```
+
+    *Use code with caution.*
+
+2. **Download the ZIP archive from GitHub:**
+   
+    - Go to the GitHub repository: [Tetris](https://github.com/cult2rologist/TETRIS/tree/main)
+    - Click "Code" -> "Download ZIP"
+    - Extract the downloaded ZIP file.
+
+### Run the game:
+
+1. Open your terminal and navigate to the extracted folder.
+2. Run the game using: 
+   
+    ```bash
+    python tetris.py
+    ```
+
+3. Make your moves using the keyboard arrows (refer to the instructions above).
+
 
 ## Files
 
