@@ -108,7 +108,7 @@
       </form>
       {% endif %}
       {% if game.is_gameover %}
-      <h1 class="text_design" style="font-size: 32px;">Leader's Board</h1>
+      <h1 class="text_design" style="font-size: 32px; display: flex; justify-content: center;">Leader's Board</h1>
       <ol class="form" >
         {% for score in scores %}
         <li class="text_design">{{ score.name }} - {{ score.score }}</li>

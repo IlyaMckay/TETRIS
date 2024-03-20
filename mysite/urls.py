@@ -18,5 +18,5 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path("tetris/", include("tetris.urls")),
+    path("", include("tetris.urls")),
 ]
