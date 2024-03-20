@@ -33,7 +33,7 @@ There are two ways to download the game:
 1. **Clone the repository using Git:**
    
     ```bash
-    git clone https://github.com/cult2rologist/TETRIS
+    git clone https://github.com/cult2rologist/TETRIS.git
     ```
 
     *Use code with caution.*
