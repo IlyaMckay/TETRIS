@@ -10,8 +10,11 @@ This is an implementation of TETRIS in Python using:
 ## Game controls:
 
 ⬆️: Rotate figure clockwise.
+
 ⬅️: Move figure left (one cell).
+
 ➡️: Move figure right (one cell).
+
 ⬇️: Soft drop (move figure down one cell). Hold for continuous soft drop.
 
 1. Choose the battlefield size by typing a number from 3 to 5:
