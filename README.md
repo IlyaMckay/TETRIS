@@ -22,7 +22,7 @@ This implementation is built using `Python` and utilizes the following technolog
 
 ## Browser Game
 
-...to be added
+...to be added in a while
 
 ## CLI Game
 
@@ -40,7 +40,7 @@ There are two ways to download the game:
 
 2. **Download the ZIP archive from GitHub:**
    
-    - Go to the GitHub repository: [Tetris](https://github.com/topics/tetris)
+    - Go to the GitHub repository: [Tetris](https://github.com/cult2rologist/TETRIS/tree/main)
     - Click "Code" -> "Download ZIP"
     - Extract the downloaded ZIP file.
 
