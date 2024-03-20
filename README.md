@@ -1,5 +1,7 @@
 [![Apache License 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
+![logo](https://github.com/cult2rologist/TETRIS/blob/main/Logo.png)
+
 # Tetris
 
 Tetris is a classic puzzle game where you strategically rotate and drop tetrominoes to clear lines.
