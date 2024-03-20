@@ -14,10 +14,10 @@ This implementation is built using Python and utilizes the following technologie
 
 ### Game Controls:
 
-- ⬆️: Rotate figure clockwise.
-- ⬅️: Move figure left (one cell).
-- ➡️: Move figure right (one cell).
-- ⬇️: Soft drop (move figure down one cell). Hold for continuous soft drop.
+- <kbd>↑</kbd> - Rotate figure clockwise.
+- <kbd>←</kbd> - Move figure left (one cell).
+- <kbd>→</kbd> - Move figure right (one cell).
+- <kbd>↓</kbd> - Soft drop (move figure down one cell). Hold for continuous soft drop.
 
 
 ## Browser Game
@@ -33,7 +33,7 @@ There are two ways to download the game:
 1. **Clone the repository using Git:**
    
     ```bash
-    git clone https://github.com/cult2rologist/TETRIS.git
+    git clone https://github.com/cult2rologist/TETRIS
     ```
 
     *Use code with caution.*
