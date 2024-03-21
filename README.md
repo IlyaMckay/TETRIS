@@ -75,4 +75,4 @@ gunicorn
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](https://github.com/cult2rologist/TETRIS/blob/main/LICENCE)file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](https://github.com/cult2rologist/TETRIS/blob/main/LICENCE) file for details.
