@@ -1,7 +1,5 @@
 [![Apache License 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
-![logo](https://github.com/cult2rologist/TETRIS/blob/main/Logo.png)
-
 # Tetris
 
 Tetris is a classic puzzle game where you strategically rotate and drop tetrominoes to clear lines.
@@ -10,7 +8,11 @@ This implementation is built using `Python` and utilizes the following technolog
 
 - `Django` framework for the backend.
 - `Jinja2` as a template engine for rendering frontend views.
-- `Threading` module: `Rlock()` is used for ensure synchronized access for shared resources, while `Timer()` is employed for updating the game field on the frontend.
+- `Threading` module:
+   - `Rlock()` ensures synchronized access for shared resources.
+   - `Timer()` updates the game field on the frontend.
+
+**The application deployed and running on the **`SAP Business Technology Platform`** (SAP BTP), utilizing the **`Cloud Foundry`** service.**
 
 ## How To Play
 
