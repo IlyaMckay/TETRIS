@@ -36,12 +36,6 @@ class GameField:
     def clear(self):
         self.game_matrix = [[0 for i in range(self.width)] for j in range(self.height)]
 
-    def col(self, n):
-        res = []
-        for i in range(self.height):
-            res.append(self.game_matrix[i][n])
-        return res
-
     def remove_row(self, n):
         self.game_matrix.pop(n)
         self.game_matrix.insert(0, [0 for i in range(self.width)])
@@ -70,22 +64,16 @@ class Shape:
     def copy(self):
         return copy.deepcopy(self)
 
-    def col(self, n):
-        res = []
-        for i in range(self.height):
-            res.append(self.game_matrix[i][n])
-        return res
-
     def move_left(self, gamefield: GameField):
         if self.x == 0:
             return False
 
-        list1 = gamefield.col(self.x-1)[self.y:self.y + self.height]
-        list2 = self.col(0)
+        c = self.copy()
+        c.x -= 1
 
-        for i in range(self.height):
-            if list1[i] != 0 and list2[i] != 0:
-                return False
+        if c.intersection(gamefield):
+            return False
+
         self.x -= 1
         return True
 
@@ -93,12 +81,12 @@ class Shape:
         if self.x + self.width == gamefield.width:
             return False
 
-        list1 = gamefield.col(self.x + self.width)[self.y:self.y + self.height]
-        list2 = self.col(self.width - 1)
+        c = self.copy()
+        c.x += 1
 
-        for i in range(self.height):
-            if list1[i] != 0 and list2[i] != 0:
-                return False
+        if c.intersection(gamefield):
+            return False
+
         self.x += 1
         return True
 
@@ -126,7 +114,7 @@ class Shape:
             for j in range(self.width):
                 if i + self.y >= 0:
                     gamefield.game_matrix[i + self.y][j + self.x] += self.game_matrix[i][j]
-
+    
     def intersection(self, gamefield: GameField):
         for i in range(self.height):
             for j in range(self.width):
@@ -334,7 +322,8 @@ class Game:
 
     def move_right(self):
         with self.lock:
-            return self.shape.move_right(self.gamefield)
+            x = self.shape.move_right(self.gamefield)
+            return x
 
     def rotate(self):
         with self.lock:
@@ -372,7 +361,6 @@ class Game:
             self.shape.add_place(gmfld)
             return gmfld
 
-
 if __name__ == '__main__':
     game = Game(20, 10)
 
@@ -388,7 +376,7 @@ if __name__ == '__main__':
         print(game)
         sys.stdout.flush()
         time.sleep(1)
-            
+
         if game.is_gameover():
             break
 
