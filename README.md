@@ -8,7 +8,11 @@ This implementation is built using `Python` and utilizes the following technolog
 
 - `Django` framework for the backend.
 - `Jinja2` as a template engine for rendering frontend views.
-- `Threading` module: `Rlock()` is used for ensure synchronized access for shared resources, while `Timer()` is employed for updating the game field on the frontend.
+- `Threading` module:
+   - `Rlock()` ensures synchronized access for shared resources.
+   - `Timer()` updates the game field on the frontend.
+
+**The application deployed and running on the **`SAP Business Technology Platform`** (SAP BTP), utilizing the **`Cloud Foundry`** service.**
 
 ## How To Play
 
@@ -55,15 +59,14 @@ There are two ways to download the game:
 
 3. Make your moves using the keyboard arrows (refer to the instructions above).
 
-
-## Files
-
-- `tictactoe.py`: Contains the main game logic.
-- `tictactoe_test.py`: Contains unit tests for each method in the `Game` class.
-
 ## Dependencies
 
 This game requires Python 3.x to run.
+```
+Django==5.0.3
+keyboard
+gunicorn
+```
 
 ## Contributors
 
@@ -72,4 +75,4 @@ This game requires Python 3.x to run.
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](https://github.com/cult2rologist/TETRIS/blob/main/LICENCE) file for details.
