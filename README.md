@@ -2,6 +2,8 @@
 
 # Tetris
 
+⚠️ Service is down. I'm working on it and the service will be awailable soon! ⚠️
+
 Tetris is a classic puzzle game where you strategically rotate and drop tetrominoes to clear lines.
 
 This implementation is built using `Python` and utilizes the following technologies:
